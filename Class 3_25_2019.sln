@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class 3_25_2019", "Class 3_25_2019\Class 3_25_2019.csproj", "{C6FEF4A2-B32A-40F3-8ECB-E1BA6DFC3703}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleDatabase", "PeopleDatabase\PeopleDatabase.csproj", "{110928D0-30CC-478F-B55C-582744C99374}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C6FEF4A2-B32A-40F3-8ECB-E1BA6DFC3703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6FEF4A2-B32A-40F3-8ECB-E1BA6DFC3703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6FEF4A2-B32A-40F3-8ECB-E1BA6DFC3703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110928D0-30CC-478F-B55C-582744C99374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110928D0-30CC-478F-B55C-582744C99374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110928D0-30CC-478F-B55C-582744C99374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110928D0-30CC-478F-B55C-582744C99374}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

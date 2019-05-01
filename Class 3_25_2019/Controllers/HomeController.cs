@@ -3,28 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PeopleDatabase;
 
 namespace Class_3_25_2019.Controllers
 {
     public class HomeController : Controller
     {
+        PeopleManager mng = new PeopleManager(Properties.Settings.Default.ConStr);
+
         public ActionResult Index()
         {
+            IEnumerable<Person> people = mng.GetPeople();
+            return View(people);
+        }
+
+        public ActionResult AddPeopleView()
+        {
             return View();
         }
 
-        public ActionResult About()
+        [HttpPost]
+        public ActionResult AddPeople(List<Person> people)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            people.ForEach((p) =>
+            {
+                mng.AddPerson(p);
+            });
+            return Redirect("/");
         }
     }
 }
